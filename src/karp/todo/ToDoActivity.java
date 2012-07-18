@@ -32,7 +32,6 @@ public class ToDoActivity extends Activity
 					customList.getAdapter().addItem(new Item(str));
 					editText.setText("");
 				}
-					
 			}
 		});
     }
@@ -40,10 +39,12 @@ public class ToDoActivity extends Activity
     public void onResume()
     {
     	// TODO save to SQL
+    	super.onResume();
     }
     
     public void onPause()
     {
     	// TODO restore from SQLite
+    	super.onPause();
     }
 }
